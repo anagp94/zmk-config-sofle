@@ -38,8 +38,15 @@
         m2: m2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(I) &kp N &kp V &kp I &kp E &kp R &kp N &kp O &kp N2 &kp N3 &kp AT_SIGN &kp A &kp G &kp O &kp RET>;
+            bindings = <&none &kp LS(I) &kp N &kp V &kp I &kp E &kp R &kp N &kp O &kp N2 &kp N3 &kp RA(LC(NUMBER_2)) &kp A &kp G &kp O &kp RET>;
             label = "M2";
+        };
+
+        m3: m3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N8>;
+            label = "M3";
         };
     };
 
