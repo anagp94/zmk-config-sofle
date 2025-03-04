@@ -41,6 +41,13 @@
             bindings = <&none &kp LS(I) &kp N &kp V &kp I &kp E &kp R &kp N &kp O &kp N2 &kp N3 &kp RA(LC(NUMBER_2)) &kp A &kp G &kp O &kp RET>;
             label = "M2";
         };
+
+        m3: m3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(COMMA) &kp SPACE &kp RC(LS(COMMA))>;
+            label = "M3";
+        };
     };
 
     keymap {
@@ -103,7 +110,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                    &m1        &trans    &trans    &trans     &trans     &m2
 &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans         &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0     &trans
 &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans         &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL    &kp BSPC
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(LS(V))  &trans        &trans    &trans  &trans     &trans    &trans    &trans     &kp SLASH  &trans
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(LS(V))  &trans        &trans    &trans  &trans     &trans    &m3       &trans     &kp SLASH  &trans
                           &trans        &trans        &trans         &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
